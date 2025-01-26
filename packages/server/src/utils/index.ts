@@ -70,7 +70,8 @@ const CHAT_HISTORY_VAR_PREFIX = 'chat_history'
 const REDACTED_CREDENTIAL_VALUE = '_FLOWISE_BLANK_07167752-1a71-43b1-bf8f-4f32252165db'
 
 let secretsManagerClient: SecretsManagerClient | null = null
-const USE_AWS_SECRETS_MANAGER = process.env.SECRETKEY_STORAGE_TYPE === 'aws'
+//const USE_AWS_SECRETS_MANAGER = process.env.SECRETKEY_STORAGE_TYPE === 'aws'
+const USE_AWS_SECRETS_MANAGER = true;
 if (USE_AWS_SECRETS_MANAGER) {
     const region = process.env.SECRETKEY_AWS_REGION || 'us-west-2' // Default region if not provided
     const accessKeyId = process.env.SECRETKEY_AWS_ACCESS_KEY
