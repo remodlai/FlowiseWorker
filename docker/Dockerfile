@@ -24,4 +24,4 @@ COPY --from=build /usr/local/bin /usr/local/bin
 
 EXPOSE 3000
 
-ENTRYPOINT ["flowise", "flowise worker"]
+ENTRYPOINT ["flowise", "start-worker"]
