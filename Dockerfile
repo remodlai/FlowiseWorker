@@ -31,4 +31,4 @@ RUN pnpm build
 
 EXPOSE 3000
 
-CMD [ "pnpm", "flowise worker" ]
+CMD [ "pnpm", "start-worker" ]
