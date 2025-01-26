@@ -72,7 +72,7 @@ const REDACTED_CREDENTIAL_VALUE = '_FLOWISE_BLANK_07167752-1a71-43b1-bf8f-4f3225
 let secretsManagerClient: SecretsManagerClient | null = null
 const USE_AWS_SECRETS_MANAGER = process.env.SECRETKEY_STORAGE_TYPE === 'aws'
 if (USE_AWS_SECRETS_MANAGER) {
-    const region = process.env.SECRETKEY_AWS_REGION || 'us-east-1' // Default region if not provided
+    const region = process.env.SECRETKEY_AWS_REGION || 'us-west-2' // Default region if not provided
     const accessKeyId = process.env.SECRETKEY_AWS_ACCESS_KEY
     const secretAccessKey = process.env.SECRETKEY_AWS_SECRET_KEY
 
